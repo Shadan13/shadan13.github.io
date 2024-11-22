@@ -23,7 +23,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000814;
+    background-color: #0a0a0a;
     transition: all 0.3s ease;
 }
 
@@ -36,13 +36,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000610;
+    background-color: #000000;
     position: fixed;
     width: 100%;
     top: 0;
     transition: all 0.3s ease;
     transition: background-color 0.3s ease;
     z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav.hide {
@@ -63,7 +64,7 @@ nav.hide {
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #E5E5E5;
+    color: #ccc;
 }
 
 .link a::after {
@@ -104,7 +105,7 @@ nav.hide {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #14213D;
+    box-shadow: 0 0 1000px 50px rgba(0, 0, 0, 0.5);
     z-index: -100;
 }
 
@@ -123,16 +124,18 @@ header h1 {
     font-weight: 600;
     line-height: 4rem;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 header h1 span {
     color: #FCA311;
+    transition: all 0.3s ease;
 }
 
 header p {
     font-size: 32px;
     font-weight: 350;
-    color: #e5e5e5;
+    color: #ccc;
     margin-top: 12px;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -150,7 +153,7 @@ section .header {
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: #ccc;
+    color: #aaa;
 }
 
 .about {
@@ -162,16 +165,16 @@ section .header {
 
 .about .card {
     padding: 3rem 2rem;
-    background-color: #0A1529;
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    border: 2px solid transparent;
+    border: 2px solid #1a1a1a;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .about .card:hover {
-    background-color: #14213D;
+    background-color: #0c0c0c;
     border-color: #F3C16E;
 }
 
@@ -205,15 +208,15 @@ section .header {
 }
 
 .skills .card {
-    background-color: #0A1529;
+    background-color: #000;
     padding: 1rem;
-    border: 2px solid transparent;
+    border: 2px solid #1a1a1a;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .skills .card:hover {
-    background-color: #14213D;
+    background-color: #0c0c0c;
     border-color: #F3C16E;
 }
 
@@ -236,28 +239,97 @@ section .header {
 }
 
 .skills .card p {
-    color: #ccc;
+    color: #aaa;
     margin-bottom: 1rem;
 }
 
 .achievements {
     margin-top: 4rem;
 
-    table,
-    th,
-    td {
-        border: 2.25px solid #e5e5e5;
+    table {
+        width: 100%;
+        color: #fff;
         border-collapse: collapse;
     }
 
-    th,
+    th {
+        background-color: #111;
+        color: #ccc;
+        padding: 20px;
+        /* Add border below the header row */
+    }
+
+    th:first-child {
+        text-align: left;
+    }
+
     td {
         padding: 20px;
+        position: relative;
     }
+
+    tr:nth-child(even) {
+        background-color: #060606;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #000;
+    }
+
+    a {
+        color: #F3C16E;
+        transition: color 0.3s ease;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #FCA311;
+    }
+
+    /* Style for rowspan cells to match the header color */
+    td[rowspan] {
+        background-color: #111;
+        color: #ccc;
+    }
+
+    .top-border {
+        border-top: 2px solid #F3C16E;
+        /* Adjust the color and thickness as needed */
+    }
+}
+
+.projects {
+    margin-top: 4rem;
 
     table {
         width: 100%;
         color: #fff;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: #111111;
+        color: #ccc;
+        padding: 20px;
+        border-bottom: 2px solid #F3C16E;
+        /* Add border below the header row */
+    }
+
+    th:first-child {
+        text-align: left;
+    }
+
+    td {
+        padding: 20px;
+        position: relative;
+    }
+
+    tr:nth-child(even) {
+        background-color: #060606;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #000;
     }
 
     a {
@@ -271,44 +343,14 @@ section .header {
     }
 }
 
-.projects {
-    margin-top: 4rem;
-
-    table,
-    th,
-    td {
-        border: 2.25px solid #e5e5e5;
-        border-collapse: collapse;
-    }
-
-    th,
-    td {
-        padding: 20px;
-    }
-
-    table {
-        width: 100%;
-        color: #fff;
-    }
-
-    a {
-        color: #F3C16E;
-        transition: color 0.3s ease;
-    }
-
-    a:hover {
-        color: #FCA311;
-    }
-}
-
 .scroll-top {
     display: none;
     position: fixed;
     bottom: 90px;
     right: 20px;
-    background-color: #0A1529;
+    background-color: #000;
     color: #fff;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #1a1a1a;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -316,11 +358,10 @@ section .header {
     font-size: 20px;
     opacity: 0;
     transition: all 0.3s ease;
-
 }
 
 .scroll-top:hover {
-    background-color: #14213D;
+    background-color: #FCA311;
     border-color: #F3C16E;
     box-shadow: none;
 }
@@ -330,9 +371,9 @@ section .header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0A1529;
+    background-color: #000;
     color: #fff;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #1a1a1a;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -342,18 +383,17 @@ section .header {
     transition: all 0.3s ease;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-
 }
 
 .dark-light:hover {
-    background-color: #14213D;
+    background-color: #FCA311;
     border-color: #F3C16E;
     box-shadow: none;
 }
 
 footer {
     position: relative;
-    background-color: #000610;
+    background-color: #000;
     padding: 40px 50px 40px;
     margin-top: 100px;
     transition: all 0.3s ease;
@@ -374,7 +414,7 @@ footer .socials {
 }
 
 footer .socials i {
-    color: #e5e5e5;
+    color: #ccc;
     font-size: 40px;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -387,10 +427,10 @@ footer .socials i:hover {
 .copyright {
     margin: auto;
     padding: 1rem;
-    color: #888;
+    color: #777;
     font-size: 0.8rem;
     text-align: center;
-    background-color: #00050F;
+    background-color: #030303;
     transition: all 0.3s ease;
 }
 
