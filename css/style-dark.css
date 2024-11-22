@@ -325,11 +325,11 @@ section .header {
     }
 
     tr:nth-child(even) {
-        background-color: #060606;
+        background-color: #000;
     }
 
     tr:nth-child(odd) {
-        background-color: #000;
+        background-color: #060606;
     }
 
     a {
