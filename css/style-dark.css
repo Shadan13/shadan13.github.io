@@ -245,6 +245,7 @@ section .header {
 
 .achievements {
     margin-top: 4rem;
+    transition: all 0.3s ease;
 
     table {
         width: 100%;
@@ -300,6 +301,7 @@ section .header {
 
 .projects {
     margin-top: 4rem;
+    transition: all 0.3s ease;
 
     table {
         width: 100%;
