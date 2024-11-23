@@ -245,7 +245,6 @@ section .header {
 
 .achievements {
     margin-top: 4rem;
-    transition: all 0.3s ease;
 
     table {
         width: 100%;
@@ -258,6 +257,7 @@ section .header {
         color: #333;
         padding: 20px;
         /* Add border below the header row */
+        transition: all 0.3s ease;
     }
 
     th:first-child {
@@ -267,14 +267,17 @@ section .header {
     td {
         padding: 20px;
         position: relative;
+        transition: all 0.3s ease;
     }
 
     tr:nth-child(even) {
         background-color: #F9F9F9;
+        transition: all 0.3s ease;
     }
 
     tr:nth-child(odd) {
         background-color: #FFFFFF;
+        transition: all 0.3s ease;
     }
 
     a {
@@ -301,7 +304,6 @@ section .header {
 
 .projects {
     margin-top: 4rem;
-    transition: all 0.3s ease;
 
     table {
         width: 100%;
@@ -315,6 +317,7 @@ section .header {
         padding: 20px;
         border-bottom: 2px solid #F3C16E;
         /* Add border below the header row */
+        transition: all 0.3s ease;
     }
 
     th:first-child {
@@ -324,14 +327,17 @@ section .header {
     td {
         padding: 20px;
         position: relative;
+        transition: all 0.3s ease;
     }
 
     tr:nth-child(even) {
         background-color: #fff;
+        transition: all 0.3s ease;
     }
 
     tr:nth-child(odd) {
         background-color: #F9F9F9;
+        transition: all 0.3s ease;
     }
 
     a {
