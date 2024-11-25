@@ -23,7 +23,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000814;
+    background-color: #0a0a0a;
     transition: all 0.3s ease;
 }
 
@@ -36,13 +36,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000610;
+    background-color: #000000;
     position: fixed;
     width: 100%;
     top: 0;
     transition: all 0.3s ease;
     transition: background-color 0.3s ease;
     z-index: 100;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 nav.hide {
@@ -63,7 +64,7 @@ nav.hide {
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #E5E5E5;
+    color: #ccc;
 }
 
 .link a::after {
@@ -104,7 +105,7 @@ nav.hide {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #14213D;
+    box-shadow: 0 0 1000px 50px rgba(0, 0, 0, 0.5);
     z-index: -100;
 }
 
@@ -118,21 +119,23 @@ header {
 
 header h1 {
     color: #fff;
-    margin-bottom: 4rem;
-    font-size: 128px;
+    margin-bottom: 1rem;
+    font-size: 64px;
     font-weight: 600;
     line-height: 4rem;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 header h1 span {
     color: #FCA311;
+    transition: all 0.3s ease;
 }
 
 header p {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 350;
-    color: #e5e5e5;
+    color: #ccc;
     margin-top: 12px;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -150,7 +153,7 @@ section .header {
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: #ccc;
+    color: #aaa;
 }
 
 .scroll-top {
@@ -158,9 +161,9 @@ section .header {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    background-color: #0A1529;
+    background-color: #000;
     color: #fff;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #1a1a1a;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -168,11 +171,10 @@ section .header {
     font-size: 20px;
     opacity: 0;
     transition: all 0.3s ease;
-
 }
 
 .scroll-top:hover {
-    background-color: #14213D;
+    background-color: #FCA311;
     border-color: #F3C16E;
     box-shadow: none;
 }
@@ -182,9 +184,9 @@ section .header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0A1529;
+    background-color: #000;
     color: #fff;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #1a1a1a;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -194,18 +196,17 @@ section .header {
     transition: all 0.3s ease;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-
 }
 
 .dark-light:hover {
-    background-color: #14213D;
+    background-color: #FCA311;
     border-color: #F3C16E;
     box-shadow: none;
 }
 
 footer {
     position: relative;
-    background-color: #000610;
+    background-color: #000;
     padding: 40px 50px 40px;
     margin-top: 100px;
     transition: all 0.3s ease;
@@ -226,7 +227,7 @@ footer .socials {
 }
 
 footer .socials i {
-    color: #e5e5e5;
+    color: #ccc;
     font-size: 40px;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -239,10 +240,10 @@ footer .socials i:hover {
 .copyright {
     margin: auto;
     padding: 1rem;
-    color: #888;
+    color: #777;
     font-size: 0.8rem;
     text-align: center;
-    background-color: #00050F;
+    background-color: #030303;
     transition: all 0.3s ease;
 }
 

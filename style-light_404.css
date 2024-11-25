@@ -23,7 +23,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #EBF3FF;
+    background-color: #f5f5f5;
     transition: all 0.3s ease;
 }
 
@@ -36,13 +36,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e6efff;
+    background-color: #FFFFFF;
     position: fixed;
     width: 100%;
     top: 0;
     transition: all 0.3s ease;
     transition: background-color 0.3s ease;
     z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav.hide {
@@ -63,7 +64,7 @@ nav.hide {
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #141414;
+    color: #333;
 }
 
 .link a::after {
@@ -73,7 +74,7 @@ nav.hide {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #F3C16E;
+    background-color: #FCA311;
     transition: all 0.3s ease;
 }
 
@@ -84,16 +85,16 @@ nav.hide {
 .btn {
     padding: 1rem 2rem;
     font-size: 1rem;
-    color: #fff;
-    background-color: #FCA311;
+    color: #000;
+    background-color: #F3C16E;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #F3C16E;
-    color: #000;
+    background-color: #FCA311;
+    color: #fff;
 }
 
 .container {
@@ -104,7 +105,7 @@ nav.hide {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #C1CFEB;
+    box-shadow: 0 0 1000px 50px rgba(255, 255, 255, 0.5);
     z-index: -100;
 }
 
@@ -118,21 +119,23 @@ header {
 
 header h1 {
     color: #000;
-    margin-bottom: 4rem;
-    font-size: 128px;
+    margin-bottom: 1rem;
+    font-size: 64px;
     font-weight: 600;
     line-height: 4rem;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 header h1 span {
-    color: #F3C16E;
+    color: #FCA311;
+    transition: all 0.3s ease;
 }
 
 header p {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 350;
-    color: #141414;
+    color: #333;
     margin-top: 12px;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -150,7 +153,7 @@ section .header {
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: #1f1f1f;
+    color: #555;
 }
 
 .scroll-top {
@@ -158,9 +161,9 @@ section .header {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    background-color: #DEE7F7;
+    background-color: #fff;
     color: #000;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #e5e5e5;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -168,12 +171,11 @@ section .header {
     font-size: 20px;
     opacity: 0;
     transition: all 0.3s ease;
-
 }
 
 .scroll-top:hover {
-    background-color: #D1DBF0;
-    border-color: #F3C16E;
+    background-color: #F3C16E;
+    border-color: #FCA311;
     box-shadow: none;
 }
 
@@ -182,9 +184,9 @@ section .header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #DEE7F7;
+    background-color: #fff;
     color: #000;
-    border: 1.5px solid transparent;
+    border: 1.5px solid #e5e5e5;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 16px 17.67px;
     border-radius: 50%;
@@ -194,18 +196,17 @@ section .header {
     transition: all 0.3s ease;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-
 }
 
 .dark-light:hover {
-    background-color: #D1DBF0;
-    border-color: #F3C16E;
+    background-color: #F3C16E;
+    border-color: #FCA311;
     box-shadow: none;
 }
 
 footer {
     position: relative;
-    background-color: #e6efff;
+    background-color: #fff;
     padding: 40px 50px 40px;
     margin-top: 100px;
     transition: all 0.3s ease;
@@ -216,7 +217,7 @@ footer .cols {
 }
 
 footer .cols .about-col h3 {
-    color: #F3C16E;
+    color: #FCA311;
     margin-bottom: 10px;
 }
 
@@ -226,23 +227,23 @@ footer .socials {
 }
 
 footer .socials i {
-    color: #141414;
+    color: #333;
     font-size: 40px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 footer .socials i:hover {
-    color: #F3C16E;
+    color: #FCA311;
 }
 
 .copyright {
     margin: auto;
     padding: 1rem;
-    color: #707070;
+    color: #888;
     font-size: 0.8rem;
     text-align: center;
-    background-color: #E3EDFF;
+    background-color: #fcfcfc;
     transition: all 0.3s ease;
 }
 
