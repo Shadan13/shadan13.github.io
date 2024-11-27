@@ -37,24 +37,47 @@ window.addEventListener('scroll', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.dark-light');
+    const currentIcon = button.querySelector('i');
+    const logoImg = document.querySelector('.nav-logo img');
+
+    // Check localStorage for theme preference
+    let theme = localStorage.getItem('theme');
+
+    // If no theme is set, initialize it to dark mode
+    if (!theme) {
+        theme = 'dark'; // Default theme
+        localStorage.setItem('theme', theme); // Set the default theme in localStorage
+    }
+
+    // Apply the theme
+    document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'light') {
+        currentIcon.classList.replace('bxs-sun', 'bxs-moon');
+        logoImg.src = 'images/logo-light.png';
+    } else {
+        currentIcon.classList.replace('bxs-moon', 'bxs-sun');
+        logoImg.src = 'images/logo-dark.png';
+    }
+});
+
 function switchMode() {
     const button = document.querySelector('.dark-light');
     const currentIcon = button.querySelector('i');
-    const currentStyleSheet = document.querySelector('link[rel=\'stylesheet\']');
     const logoImg = document.querySelector('.nav-logo img');
 
     // Toggle icon
     if (currentIcon.classList.contains('bxs-sun')) {
         currentIcon.classList.replace('bxs-sun', 'bxs-moon');
+        // Save preference to localStorage
+        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
     } else {
         currentIcon.classList.replace('bxs-moon', 'bxs-sun');
-    }
-
-    // Toggle stylesheet
-    if (currentStyleSheet.href.endsWith('style-dark.css')) {
-        currentStyleSheet.href = 'css/style-light.css';
-    } else {
-        currentStyleSheet.href = 'css/style-dark.css';
+        // Save preference to localStorage
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
 
     // Toggle logo image
