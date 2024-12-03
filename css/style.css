@@ -305,6 +305,7 @@
 
     .projects {
         margin-top: 4rem;
+        transition: all 0.3s ease;
 
         table {
             width: 100%;
@@ -350,6 +351,66 @@
         a:hover {
             color: #FCA311;
         }
+    }
+
+    .contact {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card {
+        background-color: #000;
+        padding: 1rem;
+        border: 2px solid #1a1a1a;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card span {
+        display: inline-block;
+        background-color: #FCA311;
+        padding: 2px 9px;
+        padding-bottom: 0px;
+        margin-bottom: 1rem;
+        font-size: 1.75rem;
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card span:hover {
+        background-color: #F3C16E;
+        color: #000
+    }
+
+    .contact .card h4 {
+        margin-bottom: 0.5rem;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card p {
+        color: #aaa;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card a {
+        color: #F3C16E;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card a:hover {
+        color: #FCA311;
+        margin-bottom: 1rem;
+        text-decoration: underline;
     }
 
     .scroll-top {
@@ -455,6 +516,10 @@
         .skills {
             grid-template-columns: repeat(2, 1fr);
         }
+
+        .contact {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     @media (width < 600px) {
@@ -463,6 +528,10 @@
         }
 
         .skills {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .contact {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -773,6 +842,7 @@
 
     .projects {
         margin-top: 4rem;
+        transition: all 0.3s ease;
 
         table {
             width: 100%;
@@ -818,6 +888,66 @@
         a:hover {
             color: #F3C16E;
         }
+    }
+
+    .contact {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card {
+        background-color: #fff;
+        padding: 1rem;
+        border: 2px solid #e5e5e5;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card span {
+        display: inline-block;
+        background-color: #FCA311;
+        padding: 2px 9px;
+        padding-bottom: 0px;
+        margin-bottom: 1rem;
+        font-size: 1.75rem;
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card span:hover {
+        background-color: #F3C16E;
+        color: #000
+    }
+
+    .contact .card h4 {
+        margin-bottom: 0.5rem;
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card p {
+        color: #555;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card a {
+        color: #FCA311;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+
+    .contact .card a:hover {
+        color: #F3C16E;
+        margin-bottom: 1rem;
+        text-decoration: underline;
     }
 
     .scroll-top {
@@ -923,6 +1053,10 @@
         .skills {
             grid-template-columns: repeat(2, 1fr);
         }
+
+        .contact {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     @media (width < 600px) {
@@ -931,6 +1065,10 @@
         }
 
         .skills {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .contact {
             grid-template-columns: repeat(1, 1fr);
         }
     }

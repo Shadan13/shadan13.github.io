@@ -87,3 +87,38 @@ function switchMode() {
         logoImg.src = 'images/logo-dark.png';
     }
 }
+
+
+
+function celebrate() {
+    // Create confetti
+    var duration = 3 * 1000; // Duration in milliseconds
+    var animationEnd = Date.now() + duration;
+    var defaults = {
+        startVelocity: 20,
+        spread: 180,
+        ticks: 240,
+        gravity: 1,
+        colors: ['#433d5d', '#ffcd40', '#f6f6f8', '#5e6974', '#090907']
+    };
+
+    function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    (function frame() {
+        // Launch confetti
+        confetti(Object.assign({}, defaults, {
+            particleCount: 2,
+            origin: {
+                x: randomInRange(0.1, 0.9),
+                y: Math.random() - 0.2
+            }
+        }));
+
+        // Continue until the duration is reached
+        if (Date.now() < animationEnd) {
+            requestAnimationFrame(frame);
+        }
+    })();
+}
