@@ -303,6 +303,65 @@
         }
     }
 
+    .volunteering {
+        margin-top: 4rem;
+
+        table {
+            width: 100%;
+            color: #fff;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #111;
+            color: #ccc;
+            padding: 20px;
+            /* Add border below the header row */
+            transition: all 0.3s ease;
+        }
+
+        th:first-child {
+            text-align: left;
+        }
+
+        td {
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        tr:nth-child(even) {
+            background-color: #060606;
+            transition: all 0.3s ease;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #000;
+            transition: all 0.3s ease;
+        }
+
+        a {
+            color: #F3C16E;
+            transition: color 0.3s ease;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #FCA311;
+        }
+
+        /* Style for rowspan cells to match the header color */
+        td[rowspan] {
+            background-color: #111;
+            color: #ccc;
+        }
+
+        .top-border {
+            border-top: 2px solid #F3C16E;
+            /* Adjust the color and thickness as needed */
+        }
+    }
+
     .projects {
         margin-top: 4rem;
         transition: all 0.3s ease;
@@ -782,6 +841,65 @@
     }
 
     .achievements {
+        margin-top: 4rem;
+
+        table {
+            width: 100%;
+            color: #000;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #eee;
+            color: #333;
+            padding: 20px;
+            /* Add border below the header row */
+            transition: all 0.3s ease;
+        }
+
+        th:first-child {
+            text-align: left;
+        }
+
+        td {
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F9F9F9;
+            transition: all 0.3s ease;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+
+        a {
+            color: #FCA311;
+            transition: color 0.3s ease;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #F3C16E;
+        }
+
+        /* Style for rowspan cells to match the header color */
+        td[rowspan] {
+            background-color: #eee;
+            color: #333;
+        }
+
+        .top-border {
+            border-top: 2px solid #F3C16E;
+            /* Adjust the color and thickness as needed */
+        }
+    }
+
+    .volunteering {
         margin-top: 4rem;
 
         table {
