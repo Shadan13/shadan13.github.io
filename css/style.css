@@ -9,6 +9,11 @@
         box-sizing: border-box;
     }
 
+    ::selection {
+        background-color: #FCA311;
+        color: #fff;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -603,6 +608,11 @@
         outline: none;
         border: none;
         box-sizing: border-box;
+    }
+
+    ::selection {
+        background-color: #FCA311;
+        color: #fff;
     }
 
     html {
