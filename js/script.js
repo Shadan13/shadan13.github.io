@@ -5,11 +5,11 @@ window.addEventListener('scroll', () => {
     const currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos < currentScrollPos) {
-        navbar.style.transition = 'ease-in-out 0.8s';
-        navbar.style.transform = 'translateY(-100%)';
+        navbar.style.transition = 'top 0.8s ease-in-out';
+        navbar.style.top = '-100px'; // hide
     } else {
-        navbar.style.transition = 'ease-in-out 0.8s';
-        navbar.style.transform = 'translateY(0)';
+        navbar.style.transition = 'top 0.8s ease-in-out';
+        navbar.style.top = '0'; // show
     }
 
     prevScrollPos = currentScrollPos;
@@ -19,9 +19,21 @@ window.addEventListener('scroll', () => {
     });
 });
 
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // stop native jump
+        const targetId = this.getAttribute('href').slice(1); // remove #
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
+        behavior: 'smooth'
     });
 }
 
@@ -86,39 +98,4 @@ function switchMode() {
     } else {
         logoImg.src = 'images/logo-dark.png';
     }
-}
-
-
-
-function celebrate() {
-    // Create confetti
-    var duration = 3 * 1000; // Duration in milliseconds
-    var animationEnd = Date.now() + duration;
-    var defaults = {
-        startVelocity: 20,
-        spread: 180,
-        ticks: 240,
-        gravity: 1,
-        colors: ['#433d5d', '#ffcd40', '#f6f6f8', '#5e6974', '#090907']
-    };
-
-    function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-    }
-
-    (function frame() {
-        // Launch confetti
-        confetti(Object.assign({}, defaults, {
-            particleCount: 2,
-            origin: {
-                x: randomInRange(0.1, 0.9),
-                y: Math.random() - 0.2
-            }
-        }));
-
-        // Continue until the duration is reached
-        if (Date.now() < animationEnd) {
-            requestAnimationFrame(frame);
-        }
-    })();
 }
