@@ -5,7 +5,7 @@
 
     --primary: #FF6E42;      /* Main colour. Must be darker than secondary. */
     --secondary: #FFB9A3;    /* Secondary colour. Must be lighter than primary. */
-    --tertiary: #A82700;     /* Selection colour. Darkest colour. */
+    --tertiary: #FF6E4280;     /* Selection colour. Primary colour at 50% opacity. */
 
     --background: #0A0A0A;    /* Body background. Must be a shade of black. */
     --btn-text: #383838;      /* Button text when hovered. Must be grey-ish. */
@@ -28,7 +28,7 @@
 
     --primary: #9E2500;      /* Main colour. Must be lighter than secondary. */
     --secondary: #6B1900;    /* Secondary colour. Must be darker than primary. */
-    --tertiary: #FF6333;     /* Selection colour. Lightest colour. */
+    --tertiary: #9E250080;     /* Selection colour. Primary colour at 50% opacity. */
 
     --background: #F5F5F5;    /* Body background. Must be a shade of white. */
     --btn-text: #C7C7C7;      /* Button text when hovered. Must be grey-ish. */
