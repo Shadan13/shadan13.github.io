@@ -6,7 +6,7 @@ Welcome to the source code for [shadan.one](https://shadan.one) — my personal 
 
 - Clean, responsive design across devices
 - About Me section to introduce myself and my journey
-- Skills and Project gallery
+- Skills, Project, and Volunteering gallery
 - Custom 404 page and SEO-friendly sitemap
 
 ## 🚀 Live Site
@@ -24,6 +24,7 @@ Welcome to the source code for [shadan.one](https://shadan.one) — my personal 
 ├── css/                # Stylesheets
 ├── js/                 # JavaScript for interactivity
 ├── images/             # Portfolio images
+├── assets/             # Portfolio assets
 └── videos/             # Embedded videos
 ```
 
