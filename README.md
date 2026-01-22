@@ -35,4 +35,4 @@ Welcome to the source code for [shadan.one](https://shadan.one) — my personal 
 - Custom Domain – powered by `CNAME` to map to [shadan.one](https://shadan.one)
 
 ---
-Created by Shadan Siddiqui
+Created by Shadan Siddiqui. The code is available under the MIT License, but the Resume, personal data, and images are Copyright © Shadan Siddiqui.
