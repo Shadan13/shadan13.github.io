@@ -4,9 +4,9 @@
 [data-theme="dark"] {
     /* ========================== Dark Mode Colour Variables ========================== */
 
-    --primary: #FF6E42;      /* Main colour. Must be darker than secondary. */
-    --secondary: #FFB9A3;    /* Secondary colour. Must be lighter than primary. */
-    --tertiary: #FF6E4280;     /* Selection colour. Primary colour at 50% opacity. */
+    --primary: #FF6E42;       /* Main colour. Must be darker than secondary. */
+    --secondary: #FFB9A3;     /* Secondary colour. Must be lighter than primary. */
+    --tertiary: #FF6E4280;    /* Selection colour. Primary colour at 50% opacity. */
 
     --background: #0A0A0A;    /* Body background. Must be a shade of black. */
     --btn-text: #383838;      /* Button text when hovered. Must be grey-ish. */
@@ -18,7 +18,7 @@
     --nav-btn-shadow: #FFFFFF1A;    /* 10% opacity white shadow */
     --blur-shadow: #00000080;       /* 50% opacity black shadow */
 
-    --text: #FFFFFF;    /* White for dark mode */
+    --text: #FFFFFF;      /* White for dark mode */
     --box-bg: #000000;    /* Black for dark mode */
 
     /* ================================================================================ */
@@ -27,21 +27,21 @@
 [data-theme="light"] {
     /* ========================= Light Mode Colour Variables ========================= */
 
-    --primary: #9E2500;      /* Main colour. Must be lighter than secondary. */
-    --secondary: #6B1900;    /* Secondary colour. Must be darker than primary. */
-    --tertiary: #9E250080;     /* Selection colour. Primary colour at 50% opacity. */
+    --primary: #9E2500;       /* Main colour. Must be lighter than secondary. */
+    --secondary: #6B1900;     /* Secondary colour. Must be darker than primary. */
+    --tertiary: #9E250080;    /* Selection colour. Primary colour at 50% opacity. */
 
     --background: #F5F5F5;    /* Body background. Must be a shade of white. */
     --btn-text: #C7C7C7;      /* Button text when hovered. Must be grey-ish. */
     --sub-text: #555555;      /* Body text that is not black. Must be dark grey-ish. */
 
-    --table-even: #e8e8e8;    /* Even row of table. This is the darker row. */
-    --table-odd: #ededed;     /* Odd row of table. This is the lighter row. */
+    --table-even: #E8E8E8;    /* Even row of table. This is the darker row. */
+    --table-odd: #EDEDED;     /* Odd row of table. This is the lighter row. */
 
     --nav-btn-shadow: #0000001A;    /* 10% opacity black shadow */
     --blur-shadow: #FFFFFF80;       /* 50% opacity white shadow */
 
-    --text: #000000;    /* Black for light mode */
+    --text: #000000;      /* Black for light mode */
     --box-bg: #FFFFFF;    /* White for light mode */
 
     /* =============================================================================== */
